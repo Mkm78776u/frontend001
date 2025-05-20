@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Livepush HLS Player</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="player-container">
+    <video id="video" controls poster="/poster.jpg"></video>
+    <input type="text" id="streamUrl" placeholder="Enter HLS URL" />
+    <button id="playBtn">Play</button>
+    <div id="qualityControl" style="margin-top: 10px;">
+      <label for="qualitySelect">Quality: </label>
+      <select id="qualitySelect">
+        <option value="auto">Auto</option>
+      </select>
+    </div>
+  </div>
+  <footer>
+    <p>Made by Mithilesh Kumawat | Contact: <a href="mailto:mithileshkmwt@gmail.com">mithileshkmwt@gmail.com</a></p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script src="/player.js"></script>
+</body>
+</html>
